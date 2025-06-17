@@ -1,0 +1,4 @@
+#The results of the run to calculate the ChatGPT ROUGE score are shown below:
+{'rouge1': Score(precision=0.4953271028037383, recall=0.38405797101449274, fmeasure=0.43265306122448977), 
+'rouge2': Score(precision=0.10377358490566038, recall=0.08029197080291971, fmeasure=0.09053497942386832), 
+'rougeL': Score(precision=0.24299065420560748, recall=0.18840579710144928, fmeasure=0.21224489795918366)}
