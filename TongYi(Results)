@@ -1,0 +1,4 @@
+#The results of the run to calculate the TongYi ROUGE score are shown below:
+{'rouge1': Score(precision=0.3950617283950617, recall=0.463768115942029, fmeasure=0.42666666666666664), 
+'rouge2': Score(precision=0.11801242236024845, recall=0.1386861313868613, fmeasure=0.12751677852348994), 
+'rougeL': Score(precision=0.19753086419753085, recall=0.2318840579710145, fmeasure=0.21333333333333332)}
