@@ -1,0 +1,13 @@
+#The code for WenXinYiYan to calculate the ROUGE score is shown below:
+# Import the ROUGE scoring library
+from rouge_score import rouge_scorer 
+# Initialize the ROUGE scorer, specifying the ROUGE metrics to be computed (ROUGE-1, ROUGE-2, and ROUGE-L)
+# The `use_stemmer=True` option indicates the use of stemmer extraction to improve the generalization of matches
+scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+# Define the reference text (ground truth) and the model-generated text
+reference ="Sleep Haven product 1: Luxury Cloud-Comfort Memory Foam Mattress. Experience the epitome of opulence with our Luxury Cloud-Comfort Memory Foam Mattress. Designed with an innovative, temperature-sensitive memory foam layer, this mattress embraces your body shape, offering personalized support and unparalleled comfort. The mattress is completed with a high-density foam base that ensures longevity, maintaining its form and resilience for years. With the incorporation of cooling gel-infused particles, it regulates your body temperature throughout the night, providing a perfect cool slumbering environment. The breathable, hypoallergenic cover, exquisitely embroidered with silver threads, not only adds a touch of elegance to your bedroom but also keeps allergens at bay. For a restful night and a refreshed morning, invest in the Luxury Cloud-Comfort Memory Foam Mattress. Price: $999. Sizes available for this product: Twin, Queen, King." # reference text
+generated ="The Luxury Cloud-Comfort Memory Foam Mattress is a premium sleep solution designed to provide exceptional comfort and support. Featuring high-density memory foam that conforms to your body shape and relieves pressure points, it often comes with a multi-layered construction combining different types of foam for superior support and comfort. The breathable cover allows for better air circulation, keeping the mattress cool, while reinforced edge support prevents sagging and provides a stable sleeping surface. With its potential benefits such as improved sleep quality, pain relief, temperature regulation, and allergy resistance, the Luxury Cloud-Comfort Memory Foam Mattress is a suitable choice for those who prioritize comfort and durability in their mattress, although it typically comes at a higher price point." # generated text
+# Calculate the ROUGE score, comparing the similarity between the generated text and the reference text
+scores = scorer.score(reference, generated)
+# Output scores, scores is a dictionary with ROUGE-1, ROUGE-2 and ROUGE-L scores
+print(scores)
