@@ -1,0 +1,4 @@
+#The results of the run to calculate the DeepSeek ROUGE score are shown below:
+{'rouge1': Score(precision=0.4496124031007752, recall=0.42028985507246375, fmeasure=0.43445692883895126), 
+'rouge2': Score(precision=0.1328125, recall=0.12408759124087591, fmeasure=0.12830188679245283), 
+'rougeL': Score(precision=0.21705426356589147, recall=0.2028985507246377, fmeasure=0.20973782771535582)}
