@@ -1,0 +1,4 @@
+#The results of the run to calculate the DouBao ROUGE score are shown below:
+{'rouge1': Score(precision=0.5350877192982456, recall=0.4420289855072464, fmeasure=0.4841269841269841), 
+'rouge2': Score(precision=0.19469026548672566, recall=0.16058394160583941, fmeasure=0.176), 
+'rougeL': Score(precision=0.2543859649122807, recall=0.21014492753623187, fmeasure=0.23015873015873017)}
